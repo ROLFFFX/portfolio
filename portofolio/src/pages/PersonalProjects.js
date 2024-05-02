@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
+import { useState, useEffect } from "react";
 
 export default function PersonalProjects() {
-  return (
-    <div>PersonalProjects</div>
-  )
+  return <div>hi</div>;
 }

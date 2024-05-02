@@ -29,7 +29,7 @@ export default function AppBar() {
       >
         <Grid item xs={2}></Grid>
         <Grid item xs={2}>
-          <Box sx={BoxStyle}>
+          <Box sx={BoxStyle} bgcolor={""}>
             <Button
               sx={ButtonTextStyle}
               onClick={() => {

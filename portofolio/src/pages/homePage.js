@@ -7,6 +7,8 @@ import { CiLinkedin } from "react-icons/ci";
 
 import { MdEmail } from "react-icons/md";
 import { CiPhone } from "react-icons/ci";
+import EyeFollow from "../utils/Eye";
+import { useNavigate } from "react-router-dom";
 
 const BoxStyle = {
   display: "flex",
@@ -14,37 +16,14 @@ const BoxStyle = {
   justifyContent: "center",
 };
 
-const Cloud = () => {
-  const fillOpacity = 0.7;
-  return (
-    <svg viewBox="-20 20 150 100">
-      <defs>
-        <linearGradient id="pinkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop
-            offset="0%"
-            style={{ stopColor: "#f00658", stopOpacity: fillOpacity }}
-          />
-          <stop
-            offset="100%"
-            style={{ stopColor: "#f06", stopOpacity: fillOpacity }}
-          />
-        </linearGradient>
-      </defs>
-      <path
-        fill="url(#pinkGradient)"
-        d="M 25,60 a 20,20 1 0,0 0,40 h 50 a 20,20 1 0,0 0,-40 a 10,10 1 0,0 -15,-10 a 15,15 1 0,0 -35,10 z"
-      />
-    </svg>
-  );
-};
-
 export default function HomePage() {
+  const navigate = useNavigate();
   return (
     <div>
       <Grid container>
         <Grid item xs={3}>
-          <Box border={0}>
-            <Cloud></Cloud>
+          <Box sx={BoxStyle} mt={5} width="90%">
+            <EyeFollow></EyeFollow>
           </Box>
           <Box minHeight="10vh"></Box>
           <Box sx={BoxStyle} width="90%">
@@ -206,7 +185,7 @@ export default function HomePage() {
               <span
                 style={{ color: "#f00658", textDecoration: "underline" }}
                 onClick={() => {
-                  alert("hi");
+                  navigate("/personalprojects");
                 }}
               >
                 "Personal Projects"
@@ -215,7 +194,7 @@ export default function HomePage() {
               <span
                 style={{ color: "#f00658", textDecoration: "underline" }}
                 onClick={() => {
-                  alert("hi");
+                  navigate("/groupprojects");
                 }}
               >
                 "Group Projects"
