@@ -24,7 +24,7 @@ export default function HomePage() {
           <Box sx={BoxStyle} mt={5} width="90%">
             <EyeFollow></EyeFollow>
           </Box>
-          <Box minHeight="10vh"></Box>
+          <Box minHeight="20vh"></Box>
           <Box sx={BoxStyle} width="90%">
             <Typography
               sx={{
