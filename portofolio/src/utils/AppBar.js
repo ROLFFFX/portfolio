@@ -75,7 +75,7 @@ export default function AppBar() {
                   sx={{ fontFamily: "monospace" }}
                 >
                   View it on&nbsp;
-                  <span style={{ color: "#f00618" }}>Medium</span>
+                  <span style={{ color: "#f00658" }}>Medium</span>
                 </MenuItem>
                 <MenuItem
                   onClick={() => {
@@ -85,7 +85,7 @@ export default function AppBar() {
                   sx={{ fontFamily: "monospace" }}
                 >
                   View it on&nbsp;{" "}
-                  <span style={{ color: "#f00618" }}> This Website</span>
+                  <span style={{ color: "#f00658" }}> This Website</span>
                 </MenuItem>
               </Menu>
             </div>
