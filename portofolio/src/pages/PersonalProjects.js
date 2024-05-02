@@ -289,13 +289,13 @@ export default function PersonalProjects() {
                 color: "#f00658",
               }}
             >
-              {"Needfinding in UX of Fitness & Wellness Apps"}
+              {"Accessiblility Assessment on Emory University"}
             </Typography>
             <Grid item container xs={12} border={0}>
               <Grid xs={6} border={0}>
                 <img
-                  src="/PP1.jpg"
-                  alt="PP1"
+                  src="/PP3.jpg"
+                  alt="PP3"
                   style={{ width: "300px", height: "auto" }}
                 />
               </Grid>
@@ -306,20 +306,24 @@ export default function PersonalProjects() {
                     fontSize: "11pt",
                   }}
                 >
-                  I delved into{" "}
+                  This project critically assessed the{" "}
                   <span style={{ color: "#f00658", fontWeight: "bold" }}>
-                    user experiences{" "}
-                  </span>
-                  with fitness & wellness apps through detailed interviews,
-                  unveiling insights into user engagement and motivational
-                  strategies. By using{" "}
+                    handicap accessibility
+                  </span>{" "}
+                  of pathways at Emory University for individuals with
+                  disabilities, using an{" "}
                   <span style={{ color: "#f00658", fontWeight: "bold" }}>
-                    needfinding, interviewing, and empathetic analysis
-                  </span>
-                  , I guided improvements in app design to better meet user
-                  needs and enhance user satisfaction.{" "}
+                    experiential approach
+                  </span>{" "}
+                  to simulate wheelchair navigation. The study highlighted
+                  significant strengths and potential improvements based on
+                  observations of obstacles encountered, integrating the
+                  <span style={{ color: "#f00658", fontWeight: "bold" }}>
+                    Universal Design Principles
+                  </span>{" "}
+                  throughout the assessment.
                   <a
-                    href="https://medium.com/@yshi373/needfinding-in-ux-of-fitness-wellness-apps-a2acd5e578ee"
+                    href="https://medium.com/@yshi373/design-for-accessibility-assessment-on-handicap-accessible-pathways-at-emory-university-atlanta-0c592391097e"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: "#f00658", textDecoration: "underline" }}
@@ -343,7 +347,7 @@ export default function PersonalProjects() {
                   }
                   :{" "}
                   <a
-                    href="https://medium.com/@yshi373/needfinding-in-ux-of-fitness-wellness-apps-a2acd5e578ee"
+                    href="https://medium.com/@yshi373/design-for-accessibility-assessment-on-handicap-accessible-pathways-at-emory-university-atlanta-0c592391097e"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: "#f00658", textDecoration: "underline" }}
@@ -363,24 +367,24 @@ export default function PersonalProjects() {
                   }
                   :{" "}
                   <a
-                    href="https://medium.com/@yshi373/needfinding-in-ux-of-fitness-wellness-apps-a2acd5e578ee"
+                    href=" https://www.dropbox.com/scl/fi/6viwy9xlve89t1t1julcs/Emory-University-Accessibility-Annotated-Map.jpg?rlkey=bb6e9cmadbpplk6eiiv0tkou0&dl=0"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: "#f00658", textDecoration: "underline" }}
                   >
-                    Empathy Map
+                    Annotated Map
                   </a>
                 </Typography>
               </Grid>
             </Grid>
             <Typography
-              //   mt={0.5}
+               mt={-3}
               sx={{
                 fontFamily: '"Courier Prime", "Courier", monospace',
                 fontSize: "11pt",
               }}
             >
-              {"(Need-finding, Empathize, Define)"}
+              {"(Evaluation)"}
             </Typography>
           </Box>
         </Grid>
