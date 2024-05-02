@@ -85,17 +85,11 @@ export default function PersonalProjects() {
                     fontSize: "11pt",
                   }}
                 >
-                  I delved into{" "}
-                  <span style={{ color: "#f00658", fontWeight: "bold" }}>
-                    user experiences{" "}
-                  </span>
-                  with fitness & wellness apps through detailed interviews,
-                  unveiling insights into user engagement and motivational
-                  strategies. By using{" "}
+                  Through{" "}
                   <span style={{ color: "#f00658", fontWeight: "bold" }}>
                     needfinding, interviewing, and empathetic analysis
                   </span>
-                  , I guided improvements in app design to better meet user
+                  , I discovered improvements in app design to better meet user
                   needs and enhance user satisfaction.{" "}
                   <a
                     href="https://medium.com/@yshi373/needfinding-in-ux-of-fitness-wellness-apps-a2acd5e578ee"
@@ -191,7 +185,7 @@ export default function PersonalProjects() {
                     fontSize: "11pt",
                   }}
                 >
-                  Resuming on the Needfinding Project, I dig into the
+                  Resuming on the Needfinding Project, I dive into the
                   "subsequent" stages of design thinking process. Through
                   creating{" "}
                   <span style={{ color: "#f00658", fontWeight: "bold" }}>
@@ -304,18 +298,17 @@ export default function PersonalProjects() {
                     fontSize: "11pt",
                   }}
                 >
-                  This project critically assessed the{" "}
+                  I assessed the{" "}
                   <span style={{ color: "#f00658", fontWeight: "bold" }}>
                     handicap accessibility
                   </span>{" "}
                   of pathways at Emory University for individuals with
-                  disabilities, using an{" "}
+                  disabilities using an{" "}
                   <span style={{ color: "#f00658", fontWeight: "bold" }}>
                     experiential approach
-                  </span>{" "}
-                  to simulate wheelchair navigation. The study highlighted
-                  significant strengths and potential improvements based on
-                  observations of obstacles encountered, integrating the
+                  </span>
+                  . The study showed strengths and potential improvements on
+                  accessibility at Emory, integrating the{" "}
                   <span style={{ color: "#f00658", fontWeight: "bold" }}>
                     Universal Design Principles
                   </span>{" "}
