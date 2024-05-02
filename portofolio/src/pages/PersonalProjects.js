@@ -155,7 +155,7 @@ export default function PersonalProjects() {
               </Grid>
             </Grid>
             <Typography
-              //   mt={0.5}
+              mt={-3}
               sx={{
                 fontFamily: '"Courier Prime", "Courier", monospace',
                 fontSize: "11pt",
@@ -166,7 +166,7 @@ export default function PersonalProjects() {
           </Box>
         </Grid>
         {/* Proj 2 */}
-        <Grid container item xs={6}>
+        <Grid container item xs={6} mt={-3}>
           <Box padding={3} height="38vh" border={0}>
             <Typography
               sx={{
@@ -279,7 +279,7 @@ export default function PersonalProjects() {
           </Box>
         </Grid>
         {/* Proj 3 */}
-        <Grid container item xs={6}>
+        <Grid container item xs={6} mt={-3}>
           <Box padding={3} height="38vh" border={0}>
             <Typography
               sx={{
