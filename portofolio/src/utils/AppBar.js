@@ -60,7 +60,7 @@ export default function AppBar() {
                 navigate("/personalprojects");
               }}
             >
-              Personal Projects
+              Individual Projects
             </Button>
           </Box>
         </Grid>

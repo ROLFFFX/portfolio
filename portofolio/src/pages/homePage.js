@@ -188,7 +188,7 @@ export default function HomePage() {
                   navigate("/personalprojects");
                 }}
               >
-                "Personal Projects"
+                "Individual Projects"
               </span>{" "}
               and{" "}
               <span
@@ -244,7 +244,7 @@ export default function HomePage() {
                 fontWeight: "800",
                 color: "#f00658",
               }}
-              mt={5}
+              mt={2}
             >
               {"< Me >:"}
             </Typography>
