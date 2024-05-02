@@ -27,7 +27,7 @@ export default function GroupProjects() {
               <Grid item container xs={12} border={0}>
                 <Grid xs={6} border={0}>
                   <img
-                    src="/GP1.jpg"
+                    src="GP1.png"
                     alt="GP1"
                     style={{ width: "300px", height: "auto" }}
                   />

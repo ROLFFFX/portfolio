@@ -146,7 +146,7 @@ export default function PersonalProjects() {
                 </Typography>
               </Grid>
             </Grid>
-            <Typography
+            {/* <Typography
               mt={-3}
               sx={{
                 fontFamily: '"Courier Prime", "Courier", monospace',
@@ -154,7 +154,7 @@ export default function PersonalProjects() {
               }}
             >
               {"(Need-finding, Empathize, Define)"}
-            </Typography>
+            </Typography> */}
           </Box>
         </Grid>
         {/* Proj 2 */}
@@ -259,7 +259,7 @@ export default function PersonalProjects() {
                 </Typography>
               </Grid>
             </Grid>
-            <Typography
+            {/* <Typography
               //   mt={0.5}
               sx={{
                 fontFamily: '"Courier Prime", "Courier", monospace',
@@ -267,7 +267,7 @@ export default function PersonalProjects() {
               }}
             >
               {"(Ideation, Prototyping, Evaluation)"}
-            </Typography>
+            </Typography> */}
           </Box>
         </Grid>
         {/* Proj 3 */}
