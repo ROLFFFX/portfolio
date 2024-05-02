@@ -22,9 +22,7 @@ export default function GroupProjects() {
                   color: "#f00658",
                 }}
               >
-                {
-                  "Design for Dimensions: Redesigning the Website for Tea Leaf and Creamery"
-                }
+                {"Design for Dimensions: Redesigning the Website for Tea Leaf"}
               </Typography>
               <Grid item container xs={12} border={0}>
                 <Grid xs={6} border={0}>
@@ -45,29 +43,11 @@ export default function GroupProjects() {
                     <span style={{ color: "#f00658", fontWeight: "bold" }}>
                       redesign
                     </span>{" "}
-                    of the Tea Leaf and Creamery website through stages of
+                    of the Tea Leaf website through stages of
                     <span style={{ color: "#f00658", fontWeight: "bold" }}>
                       needfinding, mood boarding, and prototyping
                     </span>{" "}
-                    across various devices. The final design effectively catered
-                    to the specific needs of{" "}
-                    <span style={{ color: "#f00658", fontWeight: "bold" }}>
-                      families with children
-                    </span>
-                    , enhancing usability and visual engagement to better serve
-                    and attract this important customer segment.
-                    {/* I delved into{" "}
-                  <span style={{ color: "#f00658", fontWeight: "bold" }}>
-                    user experiences{" "}
-                  </span>
-                  with fitness & wellness apps through detailed interviews,
-                  unveiling insights into user engagement and motivational
-                  strategies. By using{" "}
-                  <span style={{ color: "#f00658", fontWeight: "bold" }}>
-                    needfinding, interviewing, and empathetic analysis
-                  </span>
-                  , I guided improvements in app design to better meet user
-                  needs and enhance user satisfaction.{" "} */}
+                    across various devices.
                     <a
                       href="https://medium.com/@yshi373/design-for-dimensions-redesigning-the-website-for-tea-leaf-and-creamery-7250d0bde475"
                       target="_blank"
@@ -155,8 +135,11 @@ export default function GroupProjects() {
                       fontSize: "11pt",
                     }}
                   >
-                    This project creates a data visualization of nuclear
-                    testing. By integrating techniques from the{" "}
+                    This project creates a data visualization of{" "}
+                    <span style={{ color: "#f00658", fontWeight: "bold" }}>
+                      nuclear testing
+                    </span>
+                    . By integrating techniques from the{" "}
                     <span style={{ color: "#f00658", fontWeight: "bold" }}>
                       5 Design Sheet method
                     </span>{" "}
@@ -165,8 +148,7 @@ export default function GroupProjects() {
                       heuristic evaluation
                     </span>
                     , our team produced a set of both analytical and persuasive
-                    visualizations that effectively communicated the impact and
-                    scale of nuclear explosions.
+                    graphs.
                     <a
                       href="https://medium.com/@cole.smith/design-for-understanding-nuclear-testing-3e766a4447be"
                       target="_blank"
@@ -225,7 +207,7 @@ export default function GroupProjects() {
             </Box>
           </Grid>
           {/* Proj 2 */}
-          <Grid container item xs={6} mt={2}>
+          <Grid container item xs={6} mt={1}>
             <Box padding={3} height="38vh" border={0}>
               <Typography
                 sx={{
@@ -256,8 +238,8 @@ export default function GroupProjects() {
                     <span style={{ color: "#f00658", fontWeight: "bold" }}>
                       anamorphosis
                     </span>{" "}
-                    to transform museum experiences into interactive, immersive
-                    adventures. The development process followed the{" "}
+                    to create interactive, immersive experiences. The
+                    development process followed the{" "}
                     <span style={{ color: "#f00658", fontWeight: "bold" }}>
                       design thinking process
                     </span>
@@ -321,7 +303,7 @@ export default function GroupProjects() {
             </Box>
           </Grid>
           {/* Proj 3 */}
-          <Grid container item xs={6} mt={2}>
+          <Grid container item xs={6} mt={1}>
             <Box padding={3} height="38vh" border={0}>
               <Typography
                 sx={{
