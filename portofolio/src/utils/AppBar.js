@@ -1,4 +1,4 @@
-import { Divider, Grid, Box, Button } from "@mui/material";
+import { Divider, Grid, Box, Button, Menu, MenuItem } from "@mui/material";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -17,6 +17,15 @@ const ButtonTextStyle = {
 export default function AppBar() {
   const [menuState, setMenuState] = useState("Design Manifesto");
   const navigate = useNavigate();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <div>
       <Grid
@@ -42,14 +51,44 @@ export default function AppBar() {
         </Grid>
         <Grid item xs={2}>
           <Box sx={BoxStyle}>
-            <Button
-              sx={ButtonTextStyle}
-              onClick={() => {
-                navigate("/designmanifesto");
-              }}
-            >
+            <Button sx={ButtonTextStyle} onClick={handleClick}>
               Design Manifesto
             </Button>
+            <div>
+              <Menu
+                id="basic-menu"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                  "aria-labelledby": "basic-button",
+                }}
+              >
+                <MenuItem
+                  onClick={() => {
+                    window.open(
+                      "https://medium.com/@yshi373/design-for-user-my-design-manifesto-4d87eef8f1e4",
+                      "_blank"
+                    );
+                    setAnchorEl(null);
+                  }}
+                  sx={{ fontFamily: "monospace" }}
+                >
+                  View it on &nbsp;
+                  <span style={{ color: "#f00618" }}>Medium</span>
+                </MenuItem>
+                <MenuItem
+                  onClick={() => {
+                    navigate("/designmanifesto");
+                    setAnchorEl(null);
+                  }}
+                  sx={{ fontFamily: "monospace" }}
+                >
+                  View it on&nbsp;{" "}
+                  <span style={{ color: "#f00618" }}> This Website</span>
+                </MenuItem>
+              </Menu>
+            </div>
           </Box>
         </Grid>
         <Grid item xs={2}>
