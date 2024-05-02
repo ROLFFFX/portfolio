@@ -74,7 +74,7 @@ export default function AppBar() {
                   }}
                   sx={{ fontFamily: "monospace" }}
                 >
-                  View it on &nbsp;
+                  View it on&nbsp;
                   <span style={{ color: "#f00618" }}>Medium</span>
                 </MenuItem>
                 <MenuItem

@@ -200,8 +200,8 @@ export default function HomePage() {
               </span>{" "}
               tab.
               <br></br>
-              <br></br>During my free time, I play guitar and enjoys all kinds
-              of music. Check out{" "}
+              <br></br>During my free time, I play guitar and enjoy all kinds of
+              music. Check out{" "}
               <a
                 href="https://showstart-release.bandcamp.com/track/--391"
                 target="_blank"
@@ -212,6 +212,34 @@ export default function HomePage() {
               </a>{" "}
               if you are intersted!
             </Typography>
+          </Box>
+          <Box sx={BoxStyle} minHeight="24vh">
+            <Box>
+              <br></br>
+              <br></br>
+              <Typography
+                sx={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "20pt",
+                  fontWeight: "800",
+                  color: "#f00658",
+                }}
+              >
+                {"Welcome to ROLF's HCI portofolio."}
+              </Typography>
+              <br></br>
+              <Typography
+                sx={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "20pt",
+                  fontWeight: "800",
+                  color: "#f00658",
+                }}
+                textAlign={"center"}
+              >
+                {"Happy Exploring!"}
+              </Typography>
+            </Box>
           </Box>
         </Grid>
         <Grid item xs={4}>
