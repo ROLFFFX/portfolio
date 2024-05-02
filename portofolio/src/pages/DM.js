@@ -147,7 +147,7 @@ function P2() {
       </Typography>
       <br></br>
       <Typography sx={typ_mono[2]}>
-        The allure of design thinking, particularly the “
+        The allure of design thinking, particularly the "
         <a
           href="https://www.interaction-design.org/literature/article/5-stages-in-the-design-thinking-process"
           target="_blank"
@@ -156,7 +156,7 @@ function P2() {
         >
           5 Stages of the Design Thinking Process
         </a>
-        ” proposed by Hasso Plattner at the Stanford Institute of Design, lies
+        " proposed by Hasso Plattner at the Stanford Institute of Design, lies
         in its clear, structured and systematic approach to tackling complex
         design tasks. This framework, characterized by the stages of Empathize,
         Define, Ideate, Prototype, and Test, is often{" "}
@@ -172,7 +172,7 @@ function P2() {
       <Typography sx={typ_mono[1]}>Iterative vs. Stage-Based</Typography>
       <br></br>
       <Typography sx={typ_mono[2]}>
-        “Stages”' is a misleading word. Although the iterative nature of the
+        "Stages" is a misleading word. Although the iterative nature of the
         design thinking is addressed over and over again, designers still tend
         to unconsciously take it as a linear and gradual process. Indeed,
         several processes imply a linearly progressive relationship: the
