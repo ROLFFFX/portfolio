@@ -1,15 +1,12 @@
-import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
+import React from "react";
 import { AiFillMediumCircle } from "react-icons/ai";
-import { MdDraw, MdOutlineMap } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
 import { CgFigma } from "react-icons/cg";
-import { TbWorldWww } from "react-icons/tb";
-import { IoGameController } from "react-icons/io5";
 import { FaVideo } from "react-icons/fa";
+import { IoGameController } from "react-icons/io5";
+import { TbWorldWww } from "react-icons/tb";
 
 export default function GroupProjects() {
-  const navigate = useNavigate();
   return (
     <React.Fragment>
       <Box sx={{ overflow: "hidden", height: "100vh", width: "100vw" }}>

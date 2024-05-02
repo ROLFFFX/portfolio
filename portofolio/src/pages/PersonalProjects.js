@@ -164,7 +164,7 @@ export default function PersonalProjects() {
           </Box>
         </Grid>
         {/* Proj 2 */}
-        <Grid container item xs={6} mt={-3}>
+        <Grid container item xs={6} mt={-5}>
           <Box padding={3} height="38vh" border={0}>
             <Typography
               sx={{
@@ -277,7 +277,7 @@ export default function PersonalProjects() {
           </Box>
         </Grid>
         {/* Proj 3 */}
-        <Grid container item xs={6} mt={-3}>
+        <Grid container item xs={6} mt={-5}>
           <Box padding={3} height="38vh" border={0}>
             <Typography
               sx={{

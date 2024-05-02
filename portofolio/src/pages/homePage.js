@@ -1,14 +1,13 @@
-import { Grid, Typography, Box } from "@mui/material";
-import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { FaMedium } from "react-icons/fa";
+import { Box, Grid, Typography } from "@mui/material";
+import React from "react";
 import { AiFillMediumCircle } from "react-icons/ai";
 import { CiLinkedin } from "react-icons/ci";
 
-import { MdEmail } from "react-icons/md";
 import { CiPhone } from "react-icons/ci";
-import EyeFollow from "../utils/Eye";
+import { MdEmail } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import EyeFollow from "../utils/Eye";
 
 const BoxStyle = {
   display: "flex",

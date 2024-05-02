@@ -6,7 +6,7 @@ const BoxStyle = {
   display: "flex",
   alignitems: "center",
   justifyContent: "center",
-  minHeight: "10vh",
+  minHeight: "8vh",
 };
 const ButtonTextStyle = {
   color: "#f00658",
