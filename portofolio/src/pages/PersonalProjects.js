@@ -1,10 +1,8 @@
-import { Grid, Typography, Box } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { AiFillMediumCircle } from "react-icons/ai";
-import { MdOutlineMap } from "react-icons/md";
-import { MdDraw } from "react-icons/md";
+import { MdDraw, MdOutlineMap } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 export default function PersonalProjects() {
   const navigate = useNavigate();
@@ -378,7 +376,7 @@ export default function PersonalProjects() {
               </Grid>
             </Grid>
             <Typography
-               mt={-3}
+              mt={-3}
               sx={{
                 fontFamily: '"Courier Prime", "Courier", monospace',
                 fontSize: "11pt",
