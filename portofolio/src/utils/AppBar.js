@@ -1,5 +1,6 @@
 import { Divider, Grid, Box, Button } from "@mui/material";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const BoxStyle = {
   display: "flex",
@@ -15,6 +16,7 @@ const ButtonTextStyle = {
 
 export default function AppBar() {
   const [menuState, setMenuState] = useState("Design Manifesto");
+  const navigate = useNavigate();
   return (
     <div>
       <Grid
@@ -28,22 +30,50 @@ export default function AppBar() {
         <Grid item xs={2}></Grid>
         <Grid item xs={2}>
           <Box sx={BoxStyle}>
-            <Button sx={ButtonTextStyle}>About Me</Button>
+            <Button
+              sx={ButtonTextStyle}
+              onClick={() => {
+                navigate("/");
+              }}
+            >
+              About Me
+            </Button>
           </Box>
         </Grid>
         <Grid item xs={2}>
           <Box sx={BoxStyle}>
-            <Button sx={ButtonTextStyle}>Design Manifesto</Button>
+            <Button
+              sx={ButtonTextStyle}
+              onClick={() => {
+                navigate("/designmanifesto");
+              }}
+            >
+              Design Manifesto
+            </Button>
           </Box>
         </Grid>
         <Grid item xs={2}>
           <Box sx={BoxStyle}>
-            <Button sx={ButtonTextStyle}>Personal Projects</Button>
+            <Button
+              sx={ButtonTextStyle}
+              onClick={() => {
+                navigate("/personalprojects");
+              }}
+            >
+              Personal Projects
+            </Button>
           </Box>
         </Grid>
         <Grid item xs={2}>
           <Box sx={BoxStyle}>
-            <Button sx={ButtonTextStyle}>Group Projects</Button>
+            <Button
+              sx={ButtonTextStyle}
+              onClick={() => {
+                navigate("/groupprojects");
+              }}
+            >
+              Group Projects
+            </Button>
           </Box>
         </Grid>
         <Grid item xs={2}></Grid>
