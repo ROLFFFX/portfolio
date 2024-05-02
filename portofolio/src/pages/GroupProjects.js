@@ -9,7 +9,7 @@ import { TbWorldWww } from "react-icons/tb";
 export default function GroupProjects() {
   return (
     <React.Fragment>
-      <Box sx={{ overflow: "hidden", height: "100vh", width: "100vw" }}>
+      <Box>
         <Grid container>
           {/* Proj 0 */}
           <Grid container item xs={6}>
