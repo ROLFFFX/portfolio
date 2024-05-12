@@ -37,7 +37,8 @@ export default function HomePage() {
               {"< Contacts >:"}
             </Typography>
           </Box>
-          <Box ml={8} mt={4}>
+          {/* Github URL */}
+          <Box mt={4} sx={BoxStyle}>
             <Typography
               sx={{
                 fontFamily: '"Courier Prime", "Courier", monospace',
@@ -60,7 +61,8 @@ export default function HomePage() {
               </a>
             </Typography>
           </Box>
-          <Box ml={8}>
+          {/* Medium Link */}
+          <Box sx={BoxStyle}>
             <Typography
               sx={{
                 fontFamily: '"Courier Prime", "Courier", monospace',
@@ -85,7 +87,7 @@ export default function HomePage() {
             </Typography>
           </Box>
 
-          <Box ml={8}>
+          <Box sx={BoxStyle}>
             <Typography
               sx={{
                 fontFamily: '"Courier Prime", "Courier", monospace',
@@ -110,7 +112,7 @@ export default function HomePage() {
               </a>
             </Typography>
           </Box>
-          <Box ml={8}>
+          <Box sx={BoxStyle}>
             <Typography
               sx={{
                 fontFamily: '"Courier Prime", "Courier", monospace',
@@ -126,7 +128,7 @@ export default function HomePage() {
               : yshi373@emory.edu
             </Typography>
           </Box>
-          <Box ml={8}>
+          <Box sx={BoxStyle}>
             <Typography
               sx={{
                 fontFamily: '"Courier Prime", "Courier", monospace',
