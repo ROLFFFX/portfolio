@@ -8,6 +8,7 @@ import { CiPhone } from "react-icons/ci";
 import { MdEmail } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import EyeFollow from "../utils/Eye";
+import { useState, useEffect } from "react";
 
 const BoxStyle = {
   display: "flex",
@@ -15,7 +16,31 @@ const BoxStyle = {
   justifyContent: "center",
 };
 
+const getWindowDimensions = () => {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+};
+
+const useWindowDimensions = () => {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return windowDimensions;
+};
+
 export default function HomePage() {
+  const { innerHeight, innerWidth } = useWindowDimensions();
+  console.log(innerHeight, innerWidth);
   const navigate = useNavigate();
   return (
     <div>
@@ -262,7 +287,7 @@ export default function HomePage() {
             <img
               src="/cat.jpg"
               alt="Cat"
-              style={{ width: "300px", height: "auto" }}
+              style={{ width: "20vw", height: "auto" }}
             />
           </Box>
           <Box sx={BoxStyle} width="100%">
@@ -282,7 +307,7 @@ export default function HomePage() {
             <img
               src="/me.jpg"
               alt="Me"
-              style={{ width: "300px", height: "auto" }}
+              style={{ width: "20vw", height: "auto" }}
             />
           </Box>
         </Grid>
