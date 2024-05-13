@@ -16,6 +16,7 @@ const BoxStyle = {
   justifyContent: "center",
 };
 
+// get window size------------------
 const getWindowDimensions = () => {
   const { innerWidth: width, innerHeight: height } = window;
   return {
@@ -28,19 +29,24 @@ const useWindowDimensions = () => {
   const [windowDimensions, setWindowDimensions] = useState(
     getWindowDimensions()
   );
+
   useEffect(() => {
-    function handleResize() {
+    const handleResize = () => {
       setWindowDimensions(getWindowDimensions());
-    }
+    };
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   return windowDimensions;
 };
+// end get window size------------------
 
 export default function HomePage() {
-  const { innerHeight, innerWidth } = useWindowDimensions();
-  console.log(innerHeight, innerWidth);
+  const { width, height } = useWindowDimensions();
+  console.log("Window Width:", width, "Window Height:", height); // Correct logging of dimensions
+
   const navigate = useNavigate();
   return (
     <div className="custom-cursor">
@@ -59,7 +65,7 @@ export default function HomePage() {
                 color: "#f00658",
               }}
             >
-              {"< Contacts >:"}
+              {width > 900 ? "< Contacts >:" : "Contacts"}
             </Typography>
           </Box>
           {/* Github URL */}
@@ -144,13 +150,15 @@ export default function HomePage() {
                 fontSize: "13pt",
               }}
             >
-              {
+              {width > 900 ? (
                 <MdEmail
                   style={{ position: "relative", top: "3pt" }}
                   size="25px"
                 ></MdEmail>
-              }
-              : yshi373@emory.edu
+              ) : (
+                ""
+              )}
+              {width > 900 ? ": yshi373@emory.edu" : "yshi373@emory.edu"}
             </Typography>
           </Box>
           <Box sx={BoxStyle}>
@@ -160,13 +168,15 @@ export default function HomePage() {
                 fontSize: "13pt",
               }}
             >
-              {
+              {width > 900 ? (
                 <CiPhone
                   style={{ position: "relative", top: "3pt" }}
                   size="25px"
                 ></CiPhone>
-              }
-              : +(1)857-498-2756
+              ) : (
+                ""
+              )}
+              {width > 900 ? ": +(1)857-498-2756" : "857-498-2756"}
             </Typography>
           </Box>
         </Grid>
