@@ -1,13 +1,12 @@
-import { Outlet } from "react-router-dom";
+import React from "react";
+import AnimatedCursor from "react-animated-cursor";
+import { Outlet, Route, Routes } from "react-router-dom";
 import "./App.css";
+import DM from "./pages/DM";
+import GroupProjects from "./pages/GroupProjects";
+import PersonalProjects from "./pages/PersonalProjects";
 import HomePage from "./pages/homePage";
 import AppBar from "./utils/AppBar";
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import DM from "./pages/DM";
-import PersonalProjects from "./pages/PersonalProjects";
-import GroupProjects from "./pages/GroupProjects";
-import AnimatedCursor from "react-animated-cursor";
 
 function Layout({ children }) {
   return (

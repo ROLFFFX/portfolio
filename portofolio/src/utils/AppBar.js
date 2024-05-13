@@ -1,5 +1,5 @@
-import { Divider, Grid, Box, Button, Menu, MenuItem } from "@mui/material";
-import React, { useState } from "react";
+import { Box, Button, Divider, Grid, Menu, MenuItem } from "@mui/material";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const BoxStyle = {
@@ -15,7 +15,6 @@ const ButtonTextStyle = {
 };
 
 export default function AppBar() {
-  const [menuState, setMenuState] = useState("Design Manifesto");
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
