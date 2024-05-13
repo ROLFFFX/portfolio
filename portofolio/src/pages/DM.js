@@ -59,7 +59,7 @@ export default function EpubReader() {
           </Box>
         </Grid>
         <Grid item xs={5}>
-          <Box height={"83vh"} padding={3}>
+          <Box height={"83vh"} maxWidth={"600px"} padding={3}>
             {currentPage[0]}
           </Box>
         </Grid>
@@ -73,8 +73,16 @@ export default function EpubReader() {
             }}
           />
         </Grid>
-        <Grid item xs={5}>
-          <Box height={"83vh"} padding={3}>
+        <Grid
+          item
+          xs={5}
+          sx={{
+            display: "self",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Box height={"83vh"} maxWidth={"600px"} padding={3}>
             {currentPage[1]}
           </Box>
         </Grid>
