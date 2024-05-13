@@ -3,7 +3,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import { AiFillMediumCircle } from "react-icons/ai";
 import { CiLinkedin } from "react-icons/ci";
-
+import "../App.css";
 import { CiPhone } from "react-icons/ci";
 import { MdEmail } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
@@ -43,7 +43,7 @@ export default function HomePage() {
   console.log(innerHeight, innerWidth);
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="custom-cursor">
       <Grid container>
         <Grid item xs={3}>
           <Box sx={BoxStyle} mt={5} width="90%">

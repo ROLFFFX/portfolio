@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import DM from "./pages/DM";
 import PersonalProjects from "./pages/PersonalProjects";
 import GroupProjects from "./pages/GroupProjects";
+import AnimatedCursor from "react-animated-cursor";
 
 function Layout({ children }) {
   return (
@@ -18,7 +19,8 @@ function Layout({ children }) {
 }
 function App() {
   return (
-    <React.Fragment>
+    <div className="App">
+      <AnimatedCursor />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<HomePage />} />
@@ -27,7 +29,7 @@ function App() {
           <Route path="/groupprojects" element={<GroupProjects />} />
         </Route>
       </Routes>
-    </React.Fragment>
+    </div>
   );
 }
 
