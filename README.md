@@ -1,2 +1,2 @@
-# portofolio
-Rolf's personal Portofolio website.
+# portfolio
+Rolf's personal Portfolio website.
