@@ -41,7 +41,7 @@ export default function AppBar() {
             <Button
               sx={ButtonTextStyle}
               onClick={() => {
-                navigate("/");
+                navigate("/hci");
               }}
             >
               About Me
@@ -78,7 +78,7 @@ export default function AppBar() {
                 </MenuItem>
                 <MenuItem
                   onClick={() => {
-                    navigate("/designmanifesto");
+                    navigate("/hci/designmanifesto");
                     setAnchorEl(null);
                   }}
                   sx={{ fontFamily: "monospace" }}
@@ -95,7 +95,7 @@ export default function AppBar() {
             <Button
               sx={ButtonTextStyle}
               onClick={() => {
-                navigate("/personalprojects");
+                navigate("/hci/personalprojects");
               }}
             >
               Individual Projects
@@ -107,7 +107,7 @@ export default function AppBar() {
             <Button
               sx={ButtonTextStyle}
               onClick={() => {
-                navigate("/groupprojects");
+                navigate("/hci/groupprojects");
               }}
             >
               Group Projects

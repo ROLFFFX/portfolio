@@ -5,8 +5,7 @@ import { AiFillMediumCircle } from "react-icons/ai";
 import { CiLinkedin, CiPhone } from "react-icons/ci";
 import { MdEmail } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import "../App.css";
-import EyeFollow from "../utils/Eye";
+import EyeFollow from "../../utils/Eye";
 
 const BoxStyle = {
   display: "flex",
@@ -234,18 +233,6 @@ export default function HomePage() {
                 "Group Projects"
               </span>{" "}
               tab.
-              <br></br>
-              <br></br>During my free time, I play guitar and enjoy all kinds of
-              music. Check out{" "}
-              <a
-                href="https://showstart-release.bandcamp.com/track/--391"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "#f00658", textDecoration: "underline" }}
-              >
-                my band
-              </a>{" "}
-              if you are intersted!
             </Typography>
           </Box>
           <Box sx={BoxStyle} minHeight="24vh">
@@ -260,7 +247,7 @@ export default function HomePage() {
                   color: "#f00658",
                 }}
               >
-                {"Welcome to ROLF's HCI portofolio."}
+                {"Welcome to ROLF's HCI portfolio."}
               </Typography>
               <br></br>
               <Typography
